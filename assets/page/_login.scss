@@ -1,6 +1,9 @@
 .login {
     text-align: center;
     padding: 0 4.4rem;
+    a {
+        color: #000;
+    }
     &-form {
         margin: 17.86vh auto 0;
         &__logo {
@@ -16,7 +19,7 @@
                 border: 1px solid #E8E8E8;
                 background-color: #F6F6F6;
                 border-radius: 4px;
-                text-indent: 5.923%;
+                text-indent: 1.7rem;
                 margin-bottom: 1.2rem;
             }
             button { // 공통 버튼으로 수정예쩡
