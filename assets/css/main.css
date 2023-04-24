@@ -594,4 +594,116 @@ html { /* rem 정의 */
 }
 .storeItem-menu button {
   width: calc(100% - 4.4rem);
+}
+
+.chatting-header {
+  padding: 1.6rem;
+  border-bottom: 1px solid #E8E8E8;
+}
+.chatting-header-location {
+  margin-bottom: 1.1rem;
+}
+.chatting-header-location a {
+  width: 0.8rem;
+  display: inline-block;
+  margin-right: 2rem;
+}
+.chatting-header-location a img {
+  width: 100%;
+}
+.chatting-header-btns {
+  display: flex;
+  gap: 1.2rem;
+}
+.chatting-main {
+  margin: 1.2rem 1.6rem 0;
+}
+.chatting-main li:not(:first-child) {
+  margin-top: 1.2rem;
+}
+.chatting-main-me span, .chatting-main-other span {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+}
+.chatting-main-me {
+  text-align: right;
+}
+.chatting-main-me span {
+  background-color: #F5D25D;
+}
+.chatting-main-other span {
+  background-color: #E8E8E8;
+}
+.chatting-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  border-top: 1px solid #E8E8E8;
+  padding: 1.6rem 1.6rem 3.4rem;
+  align-items: center;
+}
+.chatting-message a {
+  width: 2rem;
+  margin-right: 1.2rem;
+}
+.chatting-message a img {
+  width: 100%;
+}
+.chatting-message input {
+  width: calc(100% - 3.2rem);
+  height: 4.4rem;
+  border: 1px solid #E8E8E8;
+  background-color: #F6F6F6;
+  border-radius: 0.4rem;
+  text-indent: 1.8rem;
+}
+.chatting-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.chatting-popup__wrap {
+  padding: 1.6rem 1.6rem 3.4rem;
+  position: fixed;
+  z-index: 6;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #fff;
+}
+.chatting-popup__wrap-item {
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+  background: url("/assets/images/icon-select.png") no-repeat calc(100% - 2rem) 50%; /* 화살표 모양의 이미지 */
+  background-size: 16px;
+  border-color: #E8E8E8;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 4.4rem;
+  margin-bottom: 10.5rem;
+  padding: 0 2rem;
+}
+.chatting-popup__btns {
+  display: flex;
+  gap: 1.2rem;
+}
+.chatting-popup-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.25);
 }/*# sourceMappingURL=main.css.map */
