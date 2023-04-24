@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>안나_chatting</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'>
+</head>
+<body>
+    <!-- chatting -->
+    <div class="chatting">
+        <div class="chatting-header">
+            <div class="chatting-header-location">
+                <a href="#"><img src="assets/images/icon-back.png" alt="뒤로가기"></a>
+                <span class="title4-KR">용용</span>
+            </div>
+            <div class="chatting-header-btns">
+                <button type="button" class="btn-s secon-btn1">프로필 보기</button>
+                <button type="button" class="btn-s secon-btn2" id="popupOpen">거래하기</button>
+            </div>
+        </div>
+        
+        <div class="chatting-main body3">
+            <ul>
+                <li class="chatting-main-me"><span>안녕하세요</span></li>
+                <li class="chatting-main-other"><span>안녕하세요</span></li>
+                <li class="chatting-main-me"><span>거래가능하신가요?</span></li>
+                <li class="chatting-main-other"><span>네 거래버튼 눌러주세요!</span></li>
+            </ul>
+        </div>
+        <div class="chatting-message"> 
+            <a href="#"><img src="/assets/images/chatting-message_plus.png" alt="메시지 더보기"></a>
+            <input class="body3" type="text" placeholder="메시지를 입력하세요.">
+        </div>
+    </div>
+
+    <div class="chatting-popup" id="chattingPopup">
+        <div class="chatting-popup__wrap">
+            <select name="chatting-item" class="chatting-popup__wrap-item body3">
+                <option value="item1">에어팟 프로 / 1세대 (5,000원 / 1일)</option>
+                <option value="item2">에어팟 프로 / 2세대 (6,000원 / 1일)</option>
+                <option value="item3" >에어팟 프로 / 3세대 (7,000원 / 1일)</option>
+            </select>              
+            <div class="chatting-popup__btns">
+                <button type="button" class="btn-s secon-btn2" id="popupClose1">거래 중단</button>
+                <button type="button" class="btn-s secon-btn1">거래 진행</button>
+            </div>
+        </div>
+        <div class="chatting-popup-bg" id="popupClose2"></div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.getElementById('popupOpen').addEventListener('click', () => {
+        document.getElementById('chattingPopup').style.display = 'block';
+    })
+    document.getElementById('popupClose1').addEventListener('click', () => {
+        document.getElementById('chattingPopup').style.display = 'none';
+    })
+    document.getElementById('popupClose2').addEventListener('click', () => {
+        document.getElementById('chattingPopup').style.display = 'none';
+    })
+</script>
