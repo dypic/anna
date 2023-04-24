@@ -303,91 +303,91 @@ html { /* rem 정의 */
 .heading1-KR {
   font-size: 2.2rem;
   font-weight: bold;
-  line-height: 1.4545;
+  line-height: 1.4545454545;
 }
 
 .heading1-EN {
   font-size: 2.2rem;
   font-weight: bold;
-  line-height: 1.3636;
+  line-height: 1.3636363636;
 }
 
 .title1 {
   font-size: 1.8rem;
   font-weight: bold;
-  line-height: 0.692;
+  line-height: 1.4444444444;
 }
 
 .title2 {
   font-size: 1.8rem;
   font-weight: 500;
-  line-height: 0.6923;
+  line-height: 1.4444444444;
 }
 
 .title3 {
   font-size: 1.5rem;
   font-weight: bold;
-  line-height: 0.6818;
+  line-height: 1.4666666667;
 }
 
 .title4-KR {
   font-size: 1.5rem;
   font-weight: 500;
-  line-height: 0.0818;
+  line-height: 1.4666666667;
 }
 
 .title4-EN {
   font-size: 1.6rem;
   font-weight: 500;
-  line-height: 0.7272;
+  line-height: 1.375;
 }
 
 .body1 {
   font-size: 1.7rem;
   font-weight: 400;
-  line-height: 0.68;
+  line-height: 1.4705882353;
 }
 
 .body2 {
   font-size: 1.5rem;
   font-weight: bold;
-  line-height: 0.6818;
+  line-height: 1.4666666667;
 }
 
 .body3 {
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 0.6818;
+  line-height: 1.4666666667;
 }
 
 .small1 {
   font-size: 1.3rem;
   font-weight: 400;
-  line-height: 0.6842;
+  line-height: 1.4615384615;
 }
 
 .small2 {
   font-size: 1.1rem;
   font-weight: 500;
-  line-height: 0.6875;
+  line-height: 1.4545454545;
 }
 
 .small3 {
   font-size: 1.1rem;
   font-weight: 400;
-  line-height: 0.6875;
+  line-height: 1.4545454545;
 }
 
 .button1 {
   font-size: 1.7rem;
   font-weight: 500;
-  line-height: 0.68;
+  line-height: 1.4705882353;
 }
 
 .button2 {
   font-size: 1.5rem;
   font-weight: 500;
-  line-height: 0.6818;
+  line-height: 1.4666666667;
 }
 
 .btn-l {
@@ -530,4 +530,68 @@ html { /* rem 정의 */
 .login-social-list li a, .login-social-list li img {
   display: inline-block;
   width: 100%;
+}
+.storeItem img {
+  width: 100%;
+  display: block;
+}
+.storeItem-item-name {
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E8E8E8;
+}
+.storeItem-item-name__label {
+  background-color: #3E3E3E;
+  color: #fff;
+  border-radius: 1.1rem;
+  padding: 0.2rem 1rem 0.3rem;
+}
+.storeItem-item-content {
+  padding: 0.7rem 1.6rem 0;
+}
+.storeItem-item-content h4 {
+  margin-bottom: 1rem;
+}
+.storeItem-item-content ul {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.storeItem-item-content li {
+  padding: 0.2rem 1rem 0.3rem;
+  color: #3E3E3E;
+  background-color: #E8E8E8;
+  border-radius: 4px;
+}
+.storeItem-item-content li:not(:last-child) {
+  margin-right: 1rem;
+}
+.storeItem-menu {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  padding: 1.6rem 1.6rem 3.4rem;
+  border-top: 1px solid #E8E8E8;
+  box-sizing: border-box;
+}
+.storeItem-menu__like {
+  text-align: center;
+  width: 4.4rem;
+  margin-right: 1.2rem;
+}
+.storeItem-menu__like img {
+  width: 2.4rem;
+  margin: 0 auto;
+}
+.storeItem-menu__like span {
+  color: #9E9E9E;
+  display: block;
+}
+.storeItem-menu button {
+  width: calc(100% - 4.4rem);
 }/*# sourceMappingURL=main.css.map */
