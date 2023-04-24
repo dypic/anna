@@ -47,13 +47,11 @@
         }
 
         &_btn{
-                > div{width: 100%;line-height: 1; display: flex; justify-content: space-between; margin: 1rem;
-            }
-
-              
+            > div{width: 100%;line-height: 1; display: flex; justify-content: space-between; margin: 1rem;
+        }
         &_icon-gnb{
-            > .menu {width:40%; height: 44px; display: flex; justify-content: space-between;
-                .navicon{line-height: 8;}
+             ul {width:40%; height: 44px; display: flex; justify-content: space-between;
+                .navIcon{line-height: 8;}
             
             }
 
