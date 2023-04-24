@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   color: #000;
   background: #fff;
@@ -10,11 +11,6 @@ html * {
   outline: 0;
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-html,
-body {
-  font-family: sans-serif;
 }
 
 body,
@@ -156,6 +152,7 @@ body {
 }
 
 button {
+  font-family: "Noto Sans", sans-serif;
   margin: 0;
   color: inherit;
   vertical-align: middle;
@@ -166,6 +163,15 @@ button {
   box-sizing: border-box;
 }
 
+html { /* rem 정의 */
+  font-size: 10px;
+}
+
+@media screen and (max-width: 320px) {
+  html { /* rem 정의 */
+    font-size: 10px;
+  }
+}
 @font-face {
   font-family: "Noto Sans";
   src: url(../font/NotoSansKR-Bold.woff);
@@ -262,81 +268,6 @@ button {
   font-size: 20px;
   font-weight: bold;
 }
-.guide-fontArea .guide-body-inner .heading1-KR {
-  font-size: 2.2rem;
-  font-weight: bold;
-  line-height: 1.4545;
-}
-.guide-fontArea .guide-body-inner .heading1-EN {
-  font-size: 2.2rem;
-  font-weight: bold;
-  line-height: 1.3636;
-}
-.guide-fontArea .guide-body-inner .title1 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  line-height: 0.692;
-}
-.guide-fontArea .guide-body-inner .title2 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 0.6923;
-}
-.guide-fontArea .guide-body-inner .title3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 0.6818;
-}
-.guide-fontArea .guide-body-inner .title4-KR {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 0.0818;
-}
-.guide-fontArea .guide-body-inner .title4-EN {
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 0.7272;
-}
-.guide-fontArea .guide-body-inner .body1 {
-  font-size: 1.7rem;
-  font-weight: 400;
-  line-height: 0.68;
-}
-.guide-fontArea .guide-body-inner .body2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 0.6818;
-}
-.guide-fontArea .guide-body-inner .body3 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 0.6818;
-}
-.guide-fontArea .guide-body-inner .small1 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  line-height: 0.6842;
-}
-.guide-fontArea .guide-body-inner .small2 {
-  font-size: 1.1rem;
-  font-weight: 500;
-  line-height: 0.6875;
-}
-.guide-fontArea .guide-body-inner .small3 {
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 0.6875;
-}
-.guide-fontArea .guide-body-inner .button1 {
-  font-size: 1.7rem;
-  font-weight: 500;
-  line-height: 0.68;
-}
-.guide-fontArea .guide-body-inner .button2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 0.6818;
-}
 .guide-etcArea span {
   font-size: 2.2rem;
 }
@@ -352,34 +283,6 @@ button {
   border: 0.5px solid #D6D4DC;
   border-radius: 12px;
 }
-.guide-etcArea_color .Primary-color .Primary {
-  background-color: #F5D25D;
-}
-.guide-etcArea_color .Primary-color .Primary-Variant {
-  background-color: #EFBB51;
-}
-.guide-etcArea_color .Primary-color .Back-ground {
-  background-color: #FFFFFF;
-}
-.guide-etcArea_color .gray-color .gray-scale01 {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-.guide-etcArea_color .gray-color .gray-scale02 {
-  background-color: #3E3E3E;
-}
-.guide-etcArea_color .gray-color .gray-scale03 {
-  background-color: #9E9E9E;
-}
-.guide-etcArea_color .gray-color .gray-scale04 {
-  background-color: #E8E8E8;
-}
-.guide-etcArea_color .gray-color .gray-scale05 {
-  background-color: #F6F6F6;
-}
-.guide-etcArea_color .gray-color .gray-scale06 {
-  background-color: #FFFFFF;
-}
 .guide-etcArea_btn > div {
   width: 100%;
   line-height: 1;
@@ -387,55 +290,192 @@ button {
   justify-content: space-between;
   margin: 1rem;
 }
-.guide-etcArea_btn .btn-l {
-  width: 34.3rem;
-  height: 4.4rem;
-  font-size: 17px;
-  border-radius: 4px;
-}
-.guide-etcArea_btn .btn-m {
-  width: 29.1rem;
-  height: 4.4rem;
-  font-size: 17px;
-  border-radius: 4px;
-}
-.guide-etcArea_btn .btn-s {
-  width: 16.6rem;
-  height: 4.4rem;
-  font-size: 17px;
-  border-radius: 4px;
-}
-.guide-etcArea_btn .pry-btn1 {
-  background-color: #F5D25D;
-  color: #000000;
-}
-.guide-etcArea_btn .pry-btn2 {
-  background-color: #E8E8E8;
-  color: #9E9E9E;
-}
-.guide-etcArea_btn .secon-btn1 {
-  background-color: #3E3E3E;
-  color: #FFFFFF;
-}
-.guide-etcArea_btn .secon-btn2 {
-  background-color: #FFFFFF;
-  color: #000000;
-  border: 1px solid #000;
-}
-.guide-etcArea_icon-gnb > .menu {
+.guide-etcArea_btn_icon-gnb > .menu {
   width: 40%;
   height: 44px;
   display: flex;
   justify-content: space-between;
 }
-.guide-etcArea_icon-gnb > .menu .navicon {
+.guide-etcArea_btn_icon-gnb > .menu .navicon {
   line-height: 8;
+}
+
+.heading1-KR {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.4545;
+}
+
+.heading1-EN {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.3636;
+}
+
+.title1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 0.692;
+}
+
+.title2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 0.6923;
+}
+
+.title3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 0.6818;
+}
+
+.title4-KR {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 0.0818;
+}
+
+.title4-EN {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 0.7272;
+}
+
+.body1 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 0.68;
+}
+
+.body2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 0.6818;
+}
+
+.body3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 0.6818;
+}
+
+.small1 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 0.6842;
+}
+
+.small2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 0.6875;
+}
+
+.small3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 0.6875;
+}
+
+.button1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 0.68;
+}
+
+.button2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 0.6818;
+}
+
+.btn-l {
+  width: 34.3rem;
+  height: 4.4rem;
+  font-size: 1.7rem;
+  border-radius: 4px;
+}
+
+.btn-m {
+  width: 29.1rem;
+  height: 4.4rem;
+  font-size: 1.7rem;
+  border-radius: 4px;
+}
+
+.btn-s {
+  width: 16.6rem;
+  height: 4.4rem;
+  font-size: 1.7rem;
+  border-radius: 4px;
+}
+
+.pry-btn1 {
+  background-color: #F5D25D;
+  color: #000000;
+}
+
+.pry-btn2 {
+  background-color: #E8E8E8;
+  color: #9E9E9E;
+}
+
+.secon-btn1 {
+  background-color: #3E3E3E;
+  color: #FFFFFF;
+}
+
+.secon-btn2 {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #000;
+}
+
+.Primary {
+  background-color: #F5D25D;
+}
+
+.Primary-Variant {
+  background-color: #EFBB51;
+}
+
+.Back-ground {
+  background-color: #FFFFFF;
+}
+
+.gray-scale01 {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.gray-scale02 {
+  background-color: #3E3E3E;
+}
+
+.gray-scale03 {
+  background-color: #9E9E9E;
+}
+
+.gray-scale04 {
+  background-color: #E8E8E8;
+}
+
+.gray-scale05 {
+  background-color: #F6F6F6;
+}
+
+.gray-scale06 {
+  background-color: #FFFFFF;
 }
 
 .splashScreen {
   width: 100%;
   height: 100vh;
   background-color: #efbb51;
+}
+.splashScreen svg {
+  fill: #fff;
 }
 .splashScreen div {
   max-height: 7.8rem;
@@ -448,4 +488,46 @@ button {
   font-size: 1.6rem;
   font-weight: 700;
   margin-top: 0.7rem;
+}
+
+.login {
+  text-align: center;
+  padding: 0 4.4rem;
+}
+.login-form {
+  margin: 17.86vh auto 0;
+}
+.login-form__logo {
+  fill: #EFBB51;
+  margin-bottom: 3.2rem;
+}
+.login-form__input input {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 0 12px;
+  border: 1px solid #E8E8E8;
+  background-color: #F6F6F6;
+  border-radius: 4px;
+  text-indent: 5.923%;
+  margin-bottom: 1.2rem;
+}
+.login-form__input button {
+  width: 100%;
+}
+.login-social {
+  margin-top: 10.5rem;
+}
+.login-social-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 84.32%;
+  margin: 2rem auto 5.5rem;
+}
+.login-social-list li {
+  width: 18.2%;
+}
+.login-social-list li a, .login-social-list li img {
+  display: inline-block;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
