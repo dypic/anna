@@ -1,0 +1,47 @@
+.login {
+    text-align: center;
+    padding: 0 4.4rem;
+    &-form {
+        margin: 17.86vh auto 0;
+        &__logo {
+            fill: #EFBB51;//Primary-Variant
+            margin-bottom: 3.2rem;
+        }
+        &__input {
+            input {
+                width: 100%;
+                display: inline-block;
+                box-sizing: border-box;
+                padding: 10px 0 12px;
+                border: 1px solid #E8E8E8;
+                background-color: #F6F6F6;
+                border-radius: 4px;
+                text-indent: 5.923%;
+                margin-bottom: 1.2rem;
+            }
+            button { // 공통 버튼으로 수정예쩡
+                width: 100%;
+                background-color: #F5D25D;
+                padding: 10px 0 9px;
+            }
+        }
+    }
+    &-social {
+        margin-top: 10.5rem;
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            max-width: 84.32%;
+            margin: 2rem auto 5.5rem;
+            li {
+                width: 18.2%;
+                a,img {
+                    display: inline-block;
+                    width: 100%;
+                }
+                a {
+                }
+            }
+        }
+    }
+}
