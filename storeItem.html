@@ -6,13 +6,21 @@
     <title>안나_storeItem</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- storeItem -->
     <div class="storeItem">
-        <ul class="storeItem-slide">
-            <li><img src="/assets/images/sample-item.png" alt="item-airpot"></li>
-        </ul>
+        <div class="swiper storeItem-slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/assets/images/sample-item.png" alt="item-airpot"></div>
+                <div class="swiper-slide"><img src="/assets/images/sample-item.png" alt="item-airpot"></div>
+                <div class="swiper-slide"><img src="/assets/images/sample-item.png" alt="item-airpot"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
         <div class="storeItem-item-name">
             <div>
                 <h4 class="title4-KR">에어팟 프로 / 1세대</h4>
@@ -29,15 +37,26 @@
             <p class="body1">실사용 얼마 안되어서 렌탈해요~!<br />
             중고로도 판매가 가능하니 문의주세요~</p>
         </div>
-    </div>
-
-    <div class="storeItem-menu">
-        <div class="storeItem-menu__like">
-            <img src="/assets/images/icon-like.png" alt="like-btn">
-            <span class="small2">10</span>
+        <div class="storeItem-menu">
+            <div class="storeItem-menu__like">
+                <a href="#">
+                    <img src="/assets/images/icon-like.png" alt="like-btn">
+                    <span class="small2">10</span>
+                </a>
+            </div>
+            <button type="button" class="btn-m pry-btn1">채팅하기</button>
         </div>
-        <button type="button" class="btn-m pry-btn1">채팅하기</button>
     </div>
-
 </body>
+<script src="/assets/js/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.storeItem-slide', {
+        slidesPerView: 1,
+        loop : false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+</script>
 </html> 
