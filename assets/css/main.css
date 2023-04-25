@@ -1,64 +1,56 @@
 @charset "UTF-8";
-html {
-  color: #000;
-  background: #fff;
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-html * {
-  outline: 0;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-textarea,
-p,
-blockquote,
-th,
-td,
-hr,
-button,
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
   margin: 0;
   padding: 0;
 }
 
-input,
-select,
-textarea {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
   font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
 }
 
 table {
@@ -66,80 +58,16 @@ table {
   border-spacing: 0;
 }
 
-fieldset,
-img {
-  border: 0;
-}
-
-abbr,
-acronym {
-  border: 0;
-  font-variant: normal;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-address,
-caption,
-cite,
-code,
-dfn,
-em,
-th,
-var {
-  font-style: normal;
-  font-weight: 500;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-caption,
-th {
-  text-align: left;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-weight: 500;
-}
-
-q:before,
-q:after {
-  content: "";
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-ins,
 a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -501,7 +429,8 @@ html { /* rem 정의 */
 }
 .home-wrap .nav-wrap .nav-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 0.8rem;
 }
 .home-wrap .nav-wrap .nav-list :nth-of-type(3) > a > img {
   position: absolute;
@@ -509,16 +438,19 @@ html { /* rem 정의 */
   background-color: rebeccapurple;
 }
 .home-wrap .nav-wrap .nav-list :nth-of-type(3) > a > img + span {
-  padding-top: 50px;
+  padding-top: 26px;
 }
 .home-wrap .nav-wrap .nav-list > li {
   min-width: 44px;
+  max-height: 44px;
 }
 .home-wrap .nav-wrap .nav-list > li > a {
+  min-width: 44px;
+  height: 44px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 20PX;
+  padding: 20px 0;
 }
 .home-wrap .nav-wrap .nav-list > li > a > img {
   margin: 0 auto;
