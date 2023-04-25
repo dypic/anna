@@ -563,6 +563,9 @@ html { /* rem 정의 */
   width: 100%;
 }
 
+.storeItem.padding-top-header {
+  padding-top: 4.4rem;
+}
 .storeItem img {
   width: 100%;
   display: block;
@@ -627,6 +630,12 @@ html { /* rem 정의 */
 }
 .storeItem-menu button {
   width: calc(100% - 4.4rem);
+}
+.storeItem .header-inner {
+  border-bottom: 0;
+}
+.storeItem .header-inner-back {
+  width: 0.8rem;
 }
 
 .chatting-header {
