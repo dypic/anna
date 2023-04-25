@@ -1,7 +1,7 @@
 .chatting{
     &-header {
         padding: 1.6rem;
-        border-bottom: 1px solid #E8E8E8;
+        border-bottom: 1px solid $color-gray04;
         &-location{
             margin-bottom: 1.1rem;
            a {
@@ -32,10 +32,10 @@
             text-align: right;
         }
         &-me span{
-            background-color: #F5D25D;
+            background-color: $color01;
         }
         &-other span{
-            background-color: #E8E8E8;
+            background-color: $color-gray04;
         }
     }
     &-message {
@@ -45,7 +45,7 @@
         width: 100%;
         box-sizing: border-box;
         display: flex;
-        border-top: 1px solid #E8E8E8;;
+        border-top: 1px solid $color-gray04;
         padding: 1.6rem 1.6rem 3.4rem;
         align-items: center;
         a {
@@ -58,8 +58,8 @@
         input {
             width: calc(100% - 3.2rem);
             height: 4.4rem;
-            border: 1px solid #E8E8E8;
-            background-color: #F6F6F6;
+            border: 1px solid $color-gray04;
+            background-color: $color-gray05;
             border-radius: 0.4rem;
             text-indent: 1.8rem;
         }
@@ -80,14 +80,14 @@
             width: 100%;
             box-sizing: border-box;
             border-radius: 0.4rem 0.4rem 0 0;
-            background-color: #fff;
+            background-color: $color-gray06;
             &-item {
                 -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
                 -moz-appearance: none; 
                 appearance: none;
                 background: url('/assets/images/icon-select.png') no-repeat calc(100% - 2rem) 50%; /* 화살표 모양의 이미지 */ 
                 background-size: 16px;
-                border-color: #E8E8E8;
+                border-color: $color-gray04;
                 border-radius: 4px;
                 width: 100%;
                 box-sizing: border-box;
@@ -107,7 +107,7 @@
             z-index: 5;
             height: 100vh;
             width: 100vw;
-            background-color: rgba($color: #000000, $alpha: 0.25);
+            background-color: rgba($color: $color-gray01, $alpha: 0.25);
         }
     }
 }
