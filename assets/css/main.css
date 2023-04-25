@@ -409,6 +409,7 @@ html { /* rem 정의 */
   align-items: center;
   position: fixed;
   background-color: #ffffff;
+  z-index: 999;
 }
 .home-wrap .header-wrap .header-inner {
   width: 100%;
@@ -420,11 +421,11 @@ html { /* rem 정의 */
 .home-wrap .header-wrap .home-title {
   margin: 0.7rem 0;
 }
-.home-wrap .header-wrap ul {
+.home-wrap .header-wrap .home-topicon {
   display: flex;
   align-items: center;
 }
-.home-wrap .header-wrap ul li:not(:nth-last-child(1)) {
+.home-wrap .header-wrap .home-topicon li:not(:nth-last-child(1)) {
   margin-right: 1.6rem;
 }
 .home-wrap .nav-wrap {
@@ -449,7 +450,6 @@ html { /* rem 정의 */
   padding-top: 26px;
 }
 .home-wrap .nav-wrap .nav-list > li {
-  min-width: 44px;
   max-height: 44px;
   color: #9E9E9E;
 }
@@ -457,7 +457,7 @@ html { /* rem 정의 */
   color: #000;
 }
 .home-wrap .nav-wrap .nav-list > li > a {
-  min-width: 44px;
+  min-width: 4.4rem;
   height: 44px;
   display: flex;
   flex-direction: column;
@@ -504,16 +504,16 @@ html { /* rem 정의 */
 .splashScreen {
   width: 100%;
   height: 100vh;
-  background-color: #efbb51;
+  background-color: #EFBB51;
 }
 .splashScreen svg {
-  fill: #fff;
+  fill: #FFFFFF;
 }
 .splashScreen div {
   max-height: 7.8rem;
   margin: 0 auto;
   padding-top: 30vh;
-  color: #fff;
+  color: #FFFFFF;
   text-align: center;
 }
 .splashScreen div p {
@@ -525,9 +525,6 @@ html { /* rem 정의 */
 .login {
   text-align: center;
   padding: 0 4.4rem;
-}
-.login a {
-  color: #000;
 }
 .login-form {
   margin: 17.86vh auto 0;
@@ -562,10 +559,11 @@ html { /* rem 정의 */
 .login-social-list li {
   width: 18.2%;
 }
-.login-social-list li a, .login-social-list li img {
+.login-social-list li img {
   display: inline-block;
   width: 100%;
 }
+
 .storeItem img {
   width: 100%;
   display: block;
@@ -579,7 +577,7 @@ html { /* rem 정의 */
 }
 .storeItem-item-name__label {
   background-color: #3E3E3E;
-  color: #fff;
+  color: #FFFFFF;
   border-radius: 1.1rem;
   padding: 0.2rem 1rem 0.3rem;
 }
@@ -604,7 +602,7 @@ html { /* rem 정의 */
   margin-right: 1rem;
 }
 .storeItem-menu {
-  background-color: #fff;
+  background-color: #FFFFFF;
   width: 100%;
   position: fixed;
   z-index: 3;
@@ -714,7 +712,7 @@ html { /* rem 정의 */
   width: 100%;
   box-sizing: border-box;
   border-radius: 0.4rem 0.4rem 0 0;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 .chatting-popup__wrap-item {
   -webkit-appearance: none; /* 네이티브 외형 감추기 */
