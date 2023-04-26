@@ -11,7 +11,7 @@
     .nav-list { width: calc(100% - 3.2rem);padding:0 1.6rem ; display : flex; justify-content: space-between; }
     .nav-list :nth-of-type(3) > a > img  { position: absolute; top: -10px; left: calc(50% - 22px);}
     .nav-list :nth-of-type(3) > a > img + span { padding-top: 26px;}
-    .nav-list > li { width: 100%; color:$color-gray03;}
+    .nav-list > li { width: 100%; position: relative; color:$color-gray03;}
     .nav-list > li.active { color:$color-gray01;}
     .nav-list > li > a { min-width: 4.4rem; height: 44px; display: flex; flex-direction: column; text-align: center; padding: 20px 0;}
     .nav-list > li > a > img { margin: 0 auto; margin-bottom: 5px;}

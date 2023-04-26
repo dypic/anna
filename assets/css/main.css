@@ -452,6 +452,7 @@ html { /* rem 정의 */
 }
 .nav-wrap .nav-list > li {
   width: 100%;
+  position: relative;
   color: #9E9E9E;
 }
 .nav-wrap .nav-list > li.active {
