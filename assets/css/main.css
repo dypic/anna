@@ -405,8 +405,8 @@ html { /* rem 정의 */
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background-color: #ffffff;
-  z-index: 999;
+  z-index: 9999;
+  background-color: #FFFFFF;
 }
 .header-wrap .header-inner {
   width: 100%;
@@ -433,6 +433,8 @@ html { /* rem 정의 */
   display: flex;
   bottom: 0;
   box-shadow: 0px 2px 5px #9E9E9E;
+  background-color: #FFFFFF;
+  z-index: 9999;
 }
 .nav-wrap .nav-list {
   width: calc(100% - 3.2rem);
@@ -453,7 +455,7 @@ html { /* rem 정의 */
   color: #9E9E9E;
 }
 .nav-wrap .nav-list > li.active {
-  color: #000;
+  color: #000000;
 }
 .nav-wrap .nav-list > li > a {
   min-width: 4.4rem;
@@ -468,8 +470,7 @@ html { /* rem 정의 */
   margin-bottom: 5px;
 }
 
-.main-wrap {
-  height: 100vh;
+.container-wrap {
   padding: 4.4rem 1.6rem 8.3rem;
 }
 
@@ -498,6 +499,52 @@ html { /* rem 정의 */
 .filelist ul li a:hover {
   background-color: #eee;
   text-decoration: none;
+}
+
+.storeList-wrap .storeList-inner {
+  width: 100%;
+  height: 10.8rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #E8E8E8;
+  box-sizing: border-box;
+}
+.storeList-wrap .storeList-inner-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.storeList-wrap .storeList-inner-link .storeList-img {
+  margin-right: 17px;
+}
+.storeList-wrap .storeList-inner-link .storeList-img > img {
+  min-width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.storeList-wrap .storeList-inner-link .storeList-title {
+  width: 100%;
+  position: relative;
+  margin: 0.3rem 0 0.4rem;
+  overflow: hidden;
+}
+.storeList-wrap .storeList-inner-link .storeList-title_contents {
+  display: flex;
+  flex-direction: column;
+}
+.storeList-wrap .storeList-inner-link .storeList-title_contents span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.storeList-wrap .storeList-inner-link .storeList-title_contents small {
+  margin-bottom: 10px;
+}
+.storeList-wrap .storeList-inner-link .storeList-title_likeIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .splashScreen {
