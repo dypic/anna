@@ -1,25 +1,21 @@
-
-
 //header 영역
-.header-wrap{width:calc(100% - 3.2rem); height: 4.4rem; padding:0 1.6rem ; display: flex; justify-content: space-between; align-items:center; position: fixed; background-color: #ffffff; z-index: 999;
-    .header-inner{width: 100%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #E8E8E8; }
-    .home-title{margin: 0.7rem 0;}
-    .home-topicon{display: flex; align-items: center;
-        li:not(:nth-last-child(1)){margin-right: 1.6rem;}
+.header-wrap { width:calc(100% - 3.2rem); height: 4.4rem; padding:0 1.6rem; display: flex; justify-content: space-between; align-items: center; position: fixed; z-index: 9999; background-color: $color-gray06; 
+    .header-inner {width: 100%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid $color-gray04;  }
+    .home-title {margin: 0.7rem 0;}
+    .home-topicon { display: flex; align-items: center;
+        li:not(:nth-last-child(1)) { margin-right: 1.6rem;}
     }
-
 }
 //nav영역
-.nav-wrap{ width:100%; height: 8.3rem; position:fixed; display: flex; bottom: 0; box-shadow: 0px 2px 5px #9E9E9E;
-    .nav-list{width: calc(100% - 3.2rem);padding:0 1.6rem ; display : flex; justify-content: space-between; }
-    .nav-list :nth-of-type(3) > a >img  {position: absolute; top: -10px; left: calc(50% - 22px);}
-    .nav-list :nth-of-type(3) > a >img + span {padding-top: 26px;}
-    .nav-list > li {width: 100%; color: #9E9E9E;}
-    .nav-list > li.active  { color: #000;}
-    .nav-list > li > a {min-width: 4.4rem; height: 44px; display: flex;flex-direction: column; text-align: center; padding: 20px 0;}
-    .nav-list > li > a > img{ margin: 0 auto; margin-bottom: 5px;}
-
+.nav-wrap { width:100%; height: 8.3rem; position:fixed; display: flex; bottom: 0; box-shadow: 0px 2px 5px $color-gray03; background-color:$color-gray06; z-index: 9999;
+    .nav-list { width: calc(100% - 3.2rem);padding:0 1.6rem ; display : flex; justify-content: space-between; }
+    .nav-list :nth-of-type(3) > a > img  { position: absolute; top: -10px; left: calc(50% - 22px);}
+    .nav-list :nth-of-type(3) > a > img + span { padding-top: 26px;}
+    .nav-list > li { width: 100%; color:$color-gray03;}
+    .nav-list > li.active { color:$color-gray01;}
+    .nav-list > li > a { min-width: 4.4rem; height: 44px; display: flex; flex-direction: column; text-align: center; padding: 20px 0;}
+    .nav-list > li > a > img { margin: 0 auto; margin-bottom: 5px;}
 }
-//메인 시작 
-.main-wrap{height: 100vh; padding:4.4rem 1.6rem 8.3rem;  }
+//내용 
+.container-wrap{ padding:4.4rem 1.6rem 8.3rem; }
 
