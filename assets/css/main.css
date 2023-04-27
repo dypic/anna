@@ -505,17 +505,19 @@ html { /* rem 정의 */
 .storeList-wrap .storeList-inner {
   width: 100%;
   height: 10.8rem;
+  display: flex;
   padding: 1.5rem 0;
   border-bottom: 1px solid #E8E8E8;
   box-sizing: border-box;
 }
 .storeList-wrap .storeList-inner-link {
   display: flex;
-  width: 100%;
+  min-width: 90%;
   height: 100%;
   border: none;
 }
 .storeList-wrap .storeList-inner-link .storeList-img {
+  max-width: 8.7rem;
   margin-right: 17px;
 }
 .storeList-wrap .storeList-inner-link .storeList-img > img {
@@ -532,6 +534,7 @@ html { /* rem 정의 */
 .storeList-wrap .storeList-inner-link .storeList-title_contents {
   display: flex;
   flex-direction: column;
+  min-width: 70%;
 }
 .storeList-wrap .storeList-inner-link .storeList-title_contents span {
   display: block;
@@ -542,7 +545,19 @@ html { /* rem 정의 */
 .storeList-wrap .storeList-inner-link .storeList-title_contents small {
   margin-bottom: 10px;
 }
-.storeList-wrap .storeList-inner-link .storeList-title_likeIcon {
+.storeList-wrap .storeList-inner .storeList-likeIcon {
+  position: relative;
+  min-width: 10%;
+  margin-top: 58px;
+  background-image: url(../images/icon-like.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.storeList-wrap .storeList-inner .storeList-likeIcon > img {
+  display: none;
+}
+.storeList-wrap .storeList-inner .storeList-likeIcon.on img {
+  display: block;
   position: absolute;
   bottom: 0;
   right: 0;
