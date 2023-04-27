@@ -1,5 +1,5 @@
 //header 영역
-.header-wrap { width:calc(100% - 3.2rem);  padding:0 1.6rem; display: flex; justify-content: space-between; align-items: center; position: fixed; z-index: 9999; background-color: $color-gray06; 
+.header-wrap {max-width: calc(72rem - 3.2rem); width:calc(100% - 3.2rem);  padding:0 1.6rem; display: flex; justify-content: space-between; align-items: center; position: fixed; z-index: 9999; background-color: $color-gray06; 
     .header-inner {width: 100%;height: 4.6rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid $color-gray04;  }
     .home-title {margin: 0.7rem 0;}
     .home-topicon { display: flex; align-items: center;
@@ -7,7 +7,7 @@
     }
 }
 //nav영역
-.nav-wrap { width:100%; height: 8.3rem; position:fixed; display: flex; bottom: 0; box-shadow: 0px 2px 5px $color-gray03; background-color:$color-gray06; z-index: 9999;
+.nav-wrap { width:100%; max-width: 72rem; height: 8.3rem; position:fixed; display: flex; bottom: 0; box-shadow: 0px 2px 5px $color-gray03; background-color:$color-gray06; z-index: 9999;
     .nav-list { width: calc(100% - 3.2rem);padding:0 1.6rem ; display : flex; justify-content: space-between; }
     .nav-list :nth-of-type(3) > a > img  { position: absolute; top: -10px; left: calc(50% - 22px);}
     .nav-list :nth-of-type(3) > a > img + span { padding-top: 26px;}

@@ -145,7 +145,8 @@ html { /* rem 정의 */
   unicode-range: U+0041-005A, U+0061-007A;
 }
 .guide {
-  margin: 13rem;
+  margin: 13rem auto;
+  max-width: 170rem;
 }
 .guide td {
   width: 10%;
@@ -162,6 +163,10 @@ html { /* rem 정의 */
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 5rem;
+}
+.guide-left-wrap {
+  width: calc(45% - 2.5rem);
 }
 .guide-font_info {
   margin-bottom: 3.8rem;
@@ -169,10 +174,13 @@ html { /* rem 정의 */
 .guide-font_info span {
   font-size: 1.5rem;
   margin-bottom: 3.8rem;
+  font-weight: 500;
+}
+.guide-font_info span:last-child {
+  margin-left: 2rem;
 }
 .guide-fontArea {
-  width: 60%;
-  margin-right: 2rem;
+  font-weight: 500;
 }
 .guide-fontArea .solid1 {
   border-bottom: 1px solid black;
@@ -180,24 +188,29 @@ html { /* rem 정의 */
 .guide-fontArea .solid2 {
   border-bottom: 2px solid black;
 }
-.guide-fontArea .guide-thead > tr {
-  padding: 0 50px;
-}
 .guide-fontArea .guide-thead > tr th {
   font-size: 17px;
+  text-align: left;
 }
 .guide-fontArea .guide-body-inner td {
+  vertical-align: middle;
+}
+.guide-fontArea .guide-body-inner td:not(:nth-child(2)) {
   font-size: 15px;
 }
 .guide-fontArea .guide-body-inner .Preview {
-  width: 26%;
+  width: 22%;
 }
 .guide-fontArea .guide-body-inner .scaleTitel {
   font-size: 20px;
   font-weight: bold;
 }
+.guide-etcArea {
+  width: calc(55% - 2.5rem);
+}
 .guide-etcArea span {
   font-size: 2.2rem;
+  font-weight: 500;
 }
 .guide-etcArea_color ul {
   display: flex;
@@ -210,22 +223,26 @@ html { /* rem 정의 */
   padding: 1rem;
   border: 0.5px solid #D6D4DC;
   border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
 }
 .guide-etcArea_btn > div {
-  width: 100%;
+  width: calc(100% - 2rem);
   line-height: 1;
   display: flex;
   justify-content: space-between;
   margin: 1rem;
+  gap: 1%;
 }
-.guide-etcArea_btn_icon-gnb ul {
+.guide-etcArea_icon-gnb ul {
   width: 40%;
   height: 44px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.guide-etcArea_btn_icon-gnb ul .navIcon {
-  line-height: 8;
+.guide-etcArea_color, .guide-etcArea_btn, .guide-etcArea_icon-gnb {
+  margin-bottom: 5rem;
 }
 
 .heading1-KR {
@@ -271,9 +288,9 @@ html { /* rem 정의 */
 }
 
 .body1 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.4705882353;
+  line-height: 1.5;
 }
 
 .body2 {
@@ -323,6 +340,7 @@ html { /* rem 정의 */
   height: 4.4rem;
   font-size: 1.7rem;
   border-radius: 4px;
+  font-weight: 500;
 }
 
 .btn-m {
@@ -330,6 +348,7 @@ html { /* rem 정의 */
   height: 4.4rem;
   font-size: 1.7rem;
   border-radius: 4px;
+  font-weight: 500;
 }
 
 .btn-s {
@@ -337,6 +356,7 @@ html { /* rem 정의 */
   height: 4.4rem;
   font-size: 1.7rem;
   border-radius: 4px;
+  font-weight: 500;
 }
 
 .pry-btn1 {
@@ -397,7 +417,13 @@ html { /* rem 정의 */
   background-color: #FFFFFF;
 }
 
+.container-maxWidth {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
 .header-wrap {
+  max-width: 68.8rem;
   width: calc(100% - 3.2rem);
   padding: 0 1.6rem;
   display: flex;
@@ -428,6 +454,7 @@ html { /* rem 정의 */
 
 .nav-wrap {
   width: 100%;
+  max-width: 72rem;
   height: 8.3rem;
   position: fixed;
   display: flex;
@@ -614,12 +641,16 @@ html { /* rem 정의 */
 }
 .login-social-list {
   display: flex;
-  justify-content: space-between;
   max-width: 84.32%;
   margin: 2rem auto 5.5rem;
+  justify-content: center;
 }
 .login-social-list li {
   width: 18.2%;
+  max-width: 7rem;
+}
+.login-social-list li + li {
+  margin-left: 2.2rem;
 }
 .login-social-list li img {
   display: inline-block;
@@ -627,7 +658,7 @@ html { /* rem 정의 */
 }
 
 .storeItem.padding-top-header {
-  padding-top: 4.4rem;
+  padding-top: 4.6rem;
 }
 .storeItem img {
   width: 100%;
@@ -669,10 +700,10 @@ html { /* rem 정의 */
 .storeItem-menu {
   background-color: #FFFFFF;
   width: 100%;
+  max-width: 72rem;
   position: fixed;
   z-index: 3;
   bottom: 0;
-  left: 0;
   display: flex;
   padding: 1.6rem 1.6rem 3.4rem;
   border-top: 1px solid #E8E8E8;
@@ -699,6 +730,9 @@ html { /* rem 정의 */
 }
 .storeItem .header-inner-back {
   width: 0.8rem;
+}
+.storeItem .swiper-pagination-bullet-active {
+  background-color: #fff !important;
 }
 
 .chatting-header {
@@ -741,9 +775,9 @@ html { /* rem 정의 */
   background-color: #E8E8E8;
 }
 .chatting-message {
+  max-width: 72rem;
   position: fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -767,20 +801,16 @@ html { /* rem 정의 */
   text-indent: 1.8rem;
 }
 .chatting-popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
+  margin: 0 auto;
+  max-width: 72rem;
 }
 .chatting-popup__wrap {
+  width: 100%;
+  max-width: 72rem;
   padding: 1.6rem 1.6rem 3.4rem;
   position: fixed;
   z-index: 6;
   bottom: 0;
-  left: 0;
-  width: 100%;
   box-sizing: border-box;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #FFFFFF;

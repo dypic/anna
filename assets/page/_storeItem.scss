@@ -1,6 +1,6 @@
 .storeItem {
     &.padding-top-header {
-        padding-top: 4.4rem;
+        padding-top: 4.6rem;
     }
     img {
         width: 100%;
@@ -45,10 +45,10 @@
     &-menu {
         background-color: $color-gray06;
         width: 100%;
+        max-width: 72rem;
         position: fixed;
         z-index: 3;
         bottom: 0;
-        left: 0;
         display: flex;
         padding: 1.6rem 1.6rem 3.4rem;
         border-top: 1px solid $color-gray04;
@@ -76,4 +76,7 @@
             width: 0.8rem;
         }
     }
+    .swiper-pagination-bullet-active {
+        background-color: #fff !important;
+   }
 }
