@@ -6,28 +6,114 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/main.css'>
-    <script src='main.js'></script>
 </head>
 <body>
-    <div class="container-maxWidth">
+    <div class="container-maxWidth header-relative">
         <header class="header-wrap">
             <div class="header-inner">
-               <a href="#" class="home-title heading1-KR"><img src="../assets/images/icon-close.png" alt=""></a>
+               <a href="#" class="home-title heading1-KR">안나</a>
                 <ul class="home-topicon">
                     <li><a href="#"><img src="../assets/images/icon-search.svg" alt="검색"></a></li>
                     <li><a href="#"><img src="../assets/images/icon-alarm.svg" alt="알림"></a></li>
-                    <li><a href="#"><img src="../assets/images/icon-menu.svg" alt="메뉴"></a></li>
+                    <li><a id="openFilter"><img src="../assets/images/icon-menu.svg" alt="메뉴"></a></li>
                 </ul>
             </div>
         </header>
-        <!-- <ul>
+        <ul class="side-filter title4-KR" id="sidefilter">
+            <li class="side-filter__close-btn">
+                <p id="closeFilter">
+                    <img src="/assets/images/icon-close.png" alt="">
+                </p>
+            </li>
             <li>
-                <a href="">
-                    <span></span>
-                    <img src="" alt="">
+                <a href="#" class="side-filter_flex">
+                    <span>거리</span>
+                    <span>
+                        10km 이내
+                    <img src="/assets/images/icon-pointer.png" alt="">
+                    </span>
                 </a>
             </li>
-        </ul> -->
+            <li>
+                <p id="openDepth2" class="side-filter_flex side-filter_depth1 on">
+                    <span>카테고리</span>
+                    <span>
+                        전체
+                    <img src="/assets/images/icon-pointer.png" alt="">
+                    </span>
+                </p>
+                <ul class="side-filter-depth2 on">
+                    <li>
+                        <a href="#" class="side-filter_flex">
+                            <span>패션/잡화</span>
+                            <img src="/assets/images/icon-pointer.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-filter_flex">
+                            <span>뷰티/건강</span>
+                            <img src="/assets/images/icon-pointer.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-filter_flex">
+                            <span>출산/육아</span>
+                            <img src="/assets/images/icon-pointer.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-filter_flex">
+                            <span>가전/디지털</span>
+                            <img src="/assets/images/icon-pointer.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-filter_flex">
+                            <span>주방용품</span>
+                            <img src="/assets/images/icon-pointer.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-filter_flex">
+                            <span>리빙/인테리어</span>
+                            <img src="/assets/images/icon-pointer.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-filter_flex">
+                            <span>스포츠/레저/캠핑</span>
+                            <img src="/assets/images/icon-pointer.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-filter_flex">
+                            <span>자동차 용품</span>
+                            <img src="/assets/images/icon-pointer.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-filter_flex">
+                            <span>도서/음반/DVD</span>
+                            <img src="/assets/images/icon-pointer.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-filter_flex">
+                            <span>문구/오피스</span>
+                            <img src="/assets/images/icon-pointer.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="side-filter_flex">
+                            <span>반려동물 용품</span>
+                            <img src="/assets/images/icon-pointer.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- <div>이곳에 내용을 넣어주세요!!!</div> -->
     </div>
+    <script src="../assets/js/subMenu.js"></script>
 </body>
 </html>
