@@ -420,6 +420,9 @@ html { /* rem 정의 */
 .container-maxWidth {
   max-width: 72rem;
   margin: 0 auto;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
 }
 
 .header-wrap {
@@ -574,12 +577,6 @@ html { /* rem 정의 */
 .side-filter li + li span img {
   transform: rotate(180deg) translateY(-2px);
   margin-left: 0.6rem;
-}
-
-.header-relative {
-  position: relative;
-  height: 100%;
-  overflow: hidden;
 }
 
 .filelist {

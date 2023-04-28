@@ -1,4 +1,3 @@
-
 .guide{
     margin: 13rem auto;
     max-width: 170rem;
@@ -97,4 +96,4 @@
 .gray-scale06{background-color:$color-gray06 ;}
 
 // 공통 클래스 컨테이너
-.container-maxWidth {max-width: 72rem;margin: 0 auto;}
+.container-maxWidth {max-width: 72rem;margin: 0 auto;position: relative;height: 100%;overflow: hidden;}
