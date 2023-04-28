@@ -535,6 +535,9 @@ html { /* rem 정의 */
   transform: translateX(0%);
   opacity: 1;
 }
+.side-filter_depth1 {
+  width: 100%;
+}
 .side-filter_depth1.on {
   border-bottom: 1px solid #E8E8E8;
 }
@@ -553,6 +556,10 @@ html { /* rem 정의 */
 .side-filter-depth2.on {
   height: 604px;
 }
+.side-filter-item {
+  padding: 1.6rem 2.6rem 1.6rem 3.6rem;
+  cursor: pointer;
+}
 .side-filter__close-btn img {
   max-width: 1.4rem;
   vertical-align: middle;
@@ -561,13 +568,11 @@ html { /* rem 정의 */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.6rem 2.6rem 1.6rem 3.6rem;
+  cursor: pointer;
 }
 .side-filter li {
   border-bottom: 1px solid #E8E8E8;
-}
-.side-filter li > a, .side-filter li > p {
-  padding: 1.6rem 2.6rem 1.6rem 3.6rem;
-  cursor: pointer;
 }
 .side-filter li + li img {
   max-width: 0.8rem;
