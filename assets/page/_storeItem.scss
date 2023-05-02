@@ -2,10 +2,6 @@
     &.padding-top-header {
         padding-top: 4.6rem;
     }
-    img {
-        width: 100%;
-        display: block;
-    }
     &-item {
         &-name {
             padding: 1.6rem;
@@ -72,6 +68,10 @@
     }
     .header-inner {
         border-bottom: 0;
+        img {
+            width: 100%;
+            display: block;
+        }
         &-back {
             width: 0.8rem;
         }

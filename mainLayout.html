@@ -6,128 +6,129 @@
     <title>mainLayout</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/main.css'>
-    <script src='main.js'></script>
 </head>
 <body>
     <div class="container-maxWidth">
         <header class="header-wrap">
             <div class="header-inner">
-                <h2 class="home-title heading1-KR"><a href="#">안나</a></h2>
+               <a href="#" class="home-title heading1-KR">안나</a>
                 <ul class="home-topicon">
-                    <li><a href="#"><img src="./assets/images/icon-search.svg" alt="검색"></a></li>
-                    <li><a href="#"><img src="./assets/images/icon-alarm.svg" alt="알림"></a></li>
-                    <li><a id="openFilter"><img src="../assets/images/icon-menu.svg" alt="메뉴"></a></li>
+                    <li><button><img src="../assets/images/icon-search.svg" alt="검색"></button></li>
+                    <li><button><img src="../assets/images/icon-alarm.svg" alt="알림"></button></li>
+                    <li><button id="openFilter"><img src="../assets/images/icon-menu.svg" alt="메뉴"></button></li>
                 </ul>
             </div>
         </header>
         <ul class="side-filter title4-KR" id="sidefilter">
-            <li class="side-filter__close-btn">
-                <p id="closeFilter">
-                    <img src="/assets/images/icon-close.png" alt="">
-                </p>
+            <li class="side-filter__close-btn side-filter-item">
+                <button id="closeFilter">
+                    <img src="/assets/images/icon-close.png" alt="닫기">
+                </button>
             </li>
             <li>
                 <a href="#" class="side-filter_flex">
                     <span>거리</span>
                     <span>
                         10km 이내
-                    <img src="/assets/images/icon-pointer.png" alt="">
+                    <img src="/assets/images/icon-pointer.png" alt="거리">
                     </span>
                 </a>
             </li>
             <li>
-                <p id="openDepth2" class="side-filter_flex side-filter_depth1 on">
+                <button id="openDepth2" class="side-filter_flex side-filter_depth1 on side-filter-item title4-KR">
                     <span>카테고리</span>
                     <span>
                         전체
-                    <img src="/assets/images/icon-pointer.png" alt="">
+                    <img src="/assets/images/icon-pointer.png" alt="카테고리">
                     </span>
-                </p>
+                </button>
                 <ul class="side-filter-depth2 on">
                     <li>
                         <a href="#" class="side-filter_flex">
                             <span>패션/잡화</span>
-                            <img src="/assets/images/icon-pointer.png" alt="">
+                            <img src="/assets/images/icon-pointer.png" alt="패션/잡화">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="side-filter_flex">
                             <span>뷰티/건강</span>
-                            <img src="/assets/images/icon-pointer.png" alt="">
+                            <img src="/assets/images/icon-pointer.png" alt="뷰티/건강">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="side-filter_flex">
                             <span>출산/육아</span>
-                            <img src="/assets/images/icon-pointer.png" alt="">
+                            <img src="/assets/images/icon-pointer.png" alt="출산/육아">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="side-filter_flex">
                             <span>가전/디지털</span>
-                            <img src="/assets/images/icon-pointer.png" alt="">
+                            <img src="/assets/images/icon-pointer.png" alt="가전/디지털">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="side-filter_flex">
                             <span>주방용품</span>
-                            <img src="/assets/images/icon-pointer.png" alt="">
+                            <img src="/assets/images/icon-pointer.png" alt="주방용품">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="side-filter_flex">
                             <span>리빙/인테리어</span>
-                            <img src="/assets/images/icon-pointer.png" alt="">
+                            <img src="/assets/images/icon-pointer.png" alt="리빙/인테리어">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="side-filter_flex">
                             <span>스포츠/레저/캠핑</span>
-                            <img src="/assets/images/icon-pointer.png" alt="">
+                            <img src="/assets/images/icon-pointer.png" alt="스포츠/레저/캠핑">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="side-filter_flex">
                             <span>자동차 용품</span>
-                            <img src="/assets/images/icon-pointer.png" alt="">
+                            <img src="/assets/images/icon-pointer.png" alt="자동차 용품">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="side-filter_flex">
                             <span>도서/음반/DVD</span>
-                            <img src="/assets/images/icon-pointer.png" alt="">
+                            <img src="/assets/images/icon-pointer.png" alt="도서/음반/DVD">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="side-filter_flex">
                             <span>문구/오피스</span>
-                            <img src="/assets/images/icon-pointer.png" alt="">
+                            <img src="/assets/images/icon-pointer.png" alt="문구/오피스">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="side-filter_flex">
                             <span>반려동물 용품</span>
-                            <img src="/assets/images/icon-pointer.png" alt="">
+                            <img src="/assets/images/icon-pointer.png" alt="반려동물 용품">
                         </a>
                     </li>
                 </ul>
             </li>
         </ul>
-        <nav class="nav-wrap">
-            <ul class="nav-list">
-                <!--  img 파일명 icon-gnb-[w01] (비활성화 ) / [b01] (활성화) -->
-                <li class="active"><a href="#"><img src="./assets/images/icon-gnb-b01.svg" alt="홈홈"><span class="small2">홈</span></a></li>
-                <li><a href="#"><img src="./assets/images/icon-gnb-w02.svg" alt="구해요"><span class="small2">구해요</span></a></li>
-                <li><a href="#"><img src="./assets/images/icon-gnb-add.svg" alt="추가"><span class="small2">추가</span></a></li>
-                <li><a href="#"><img src="./assets/images/icon-gnb-w03.svg" alt="동네정보"><span class="small2">동네정보</span></a></li>
-                <li><a href="#"><img src="./assets/images/icon-gnb-w04.svg" alt="마이페이지"><span class="small2">마이페이지</span></a></li>
-            </ul>
-        </nav>
+        <div>
+            <nav class="nav-wrap">
+                <ul class="nav-list">
+                    <!--  img 파일명 icon-gnb-[w01] (비활성화 ) / [b01] (활성화) -->
+                    <li class="active"><a href="#"><img src="./assets/images/icon-gnb-b01.svg" alt="홈홈"><span class="small2">홈</span></a></li>
+                    <li><a href="#"><img src="./assets/images/icon-gnb-w02.svg" alt="구해요"><span class="small2">구해요</span></a></li>
+                    <li><a href="#"><img src="./assets/images/icon-gnb-add.svg" alt="추가"><span class="small2">추가</span></a></li>
+                    <li><a href="#"><img src="./assets/images/icon-gnb-w03.svg" alt="동네정보"><span class="small2">동네정보</span></a></li>
+                    <li><a href="#"><img src="./assets/images/icon-gnb-w04.svg" alt="마이페이지"><span class="small2">마이페이지</span></a></li>
+                </ul>
+            </nav>
+        </div>
         <main class="main-wrap">
             <!--컨텐츠 넣기   -->
             메인
         </main>
-    </div> 
+    </div>
     <script src="../assets/js/subMenu.js"></script>
 </body>
 </html>

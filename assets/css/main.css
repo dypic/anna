@@ -465,7 +465,7 @@ html { /* rem 정의 */
   position: fixed;
   display: flex;
   bottom: 0;
-  box-shadow: 0px 2px 5px #9E9E9E;
+  box-shadow: 0px -9px 8px -12px #9E9E9E;
   background-color: #FFFFFF;
   z-index: 9999;
 }
@@ -742,10 +742,6 @@ html { /* rem 정의 */
 .storeItem.padding-top-header {
   padding-top: 4.6rem;
 }
-.storeItem img {
-  width: 100%;
-  display: block;
-}
 .storeItem-item-name {
   padding: 1.6rem;
   display: flex;
@@ -809,6 +805,10 @@ html { /* rem 정의 */
 }
 .storeItem .header-inner {
   border-bottom: 0;
+}
+.storeItem .header-inner img {
+  width: 100%;
+  display: block;
 }
 .storeItem .header-inner-back {
   width: 0.8rem;
