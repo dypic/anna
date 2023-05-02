@@ -16,11 +16,8 @@
                 
             }
             // 하트 아이콘콘
-            .storeList-likeIcon{position: relative; min-width:10%; margin-top: 58px; background-image: url(../images/icon-like.svg); background-repeat: no-repeat; background-position: right;
-                >img{ display: none;}
+            .storeList-likeIcon{position: relative; min-width:10%; margin-top: 58px;
             }
-            .storeList-likeIcon.on img{display: block; position:absolute; bottom: 0; right: 0;}
-
         }
     }
 }

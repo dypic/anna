@@ -658,18 +658,6 @@ html { /* rem 정의 */
   position: relative;
   min-width: 10%;
   margin-top: 58px;
-  background-image: url(../images/icon-like.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-}
-.storeList-wrap .storeList-inner .storeList-likeIcon > img {
-  display: none;
-}
-.storeList-wrap .storeList-inner .storeList-likeIcon.on img {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .splashScreen {
