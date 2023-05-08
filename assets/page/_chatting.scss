@@ -7,8 +7,10 @@
         border-bottom: 1px solid $color-gray04;
         &-location{
             margin-bottom: 1.1rem;
+            display: flex;
+            align-items: center;
            a {
-            width: 0.8rem;
+            width: 2.4rem;
             display: inline-block;
             margin-right: 2rem;
             img {
@@ -71,6 +73,9 @@
         display: none;
         margin: 0 auto;
         max-width: 72rem;
+        .btn-s {
+            width: 50%;
+        }
         &__wrap {
             width: 100%;
             max-width: 72rem;

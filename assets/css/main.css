@@ -230,9 +230,13 @@ html { /* rem 정의 */
   width: calc(100% - 2rem);
   line-height: 1;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   margin: 1rem;
   gap: 1%;
+}
+.guide-etcArea_btn > div span {
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 .guide-etcArea_icon-gnb ul {
   width: 40%;
@@ -825,9 +829,11 @@ html { /* rem 정의 */
 }
 .chatting-header-location {
   margin-bottom: 1.1rem;
+  display: flex;
+  align-items: center;
 }
 .chatting-header-location a {
-  width: 0.8rem;
+  width: 2.4rem;
   display: inline-block;
   margin-right: 2rem;
 }
@@ -888,6 +894,9 @@ html { /* rem 정의 */
   display: none;
   margin: 0 auto;
   max-width: 72rem;
+}
+.chatting-popup .btn-s {
+  width: 50%;
 }
 .chatting-popup__wrap {
   width: 100%;
