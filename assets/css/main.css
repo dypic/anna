@@ -442,7 +442,7 @@ html { /* rem 정의 */
 }
 .header-wrap .header-inner {
   width: 100%;
-  height: 4.6rem;
+  height: 5.542rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -509,7 +509,7 @@ html { /* rem 정의 */
 }
 
 .container-wrap {
-  padding: 4.4rem 1.6rem 8.3rem;
+  padding: 5.542rem 1.6rem 8.3rem;
 }
 
 .header-position {
