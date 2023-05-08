@@ -681,9 +681,15 @@ html { /* rem 정의 */
   margin-top: 0.7rem;
 }
 
+@media screen and (min-width: 768px) {
+  .splashScreen div {
+    padding-top: 25vh;
+  }
+}
 .login {
   text-align: center;
   padding: 0 4.4rem;
+  height: 100vh;
 }
 .login-form {
   margin: 17.86vh auto 0;
@@ -727,6 +733,11 @@ html { /* rem 정의 */
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .login-form {
+    margin-top: 25vh;
+  }
+}
 .storeItem.padding-top-header {
   padding-top: 4.6rem;
 }
@@ -788,7 +799,7 @@ html { /* rem 정의 */
   color: #9E9E9E;
   display: block;
 }
-.storeItem-menu button {
+.storeItem-menu .chatting-btn {
   width: calc(100% - 4.4rem);
 }
 .storeItem .header-inner {
@@ -805,6 +816,9 @@ html { /* rem 정의 */
   background-color: #fff !important;
 }
 
+.chatting .btn-s {
+  width: 50%;
+}
 .chatting-header {
   padding: 1.6rem;
   border-bottom: 1px solid #E8E8E8;
@@ -871,6 +885,7 @@ html { /* rem 정의 */
   text-indent: 1.8rem;
 }
 .chatting-popup {
+  display: none;
   margin: 0 auto;
   max-width: 72rem;
 }

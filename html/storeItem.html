@@ -140,20 +140,33 @@
                 중고로도 판매가 가능하니 문의주세요~</p>
             </div>
             <div class="storeItem-menu">
-                <div class="storeItem-menu__like">
-                    <a href="#">
-                        <img src="../assets/images/icon-like.png" alt="like-btn">
-                        <span class="small2">10</span>
-                    </a>
-                </div>
-                <button type="button" class="btn-m pry-btn1">채팅하기</button>
+                <button  id="storeItem-likeIcon" class="storeItem-menu__like">
+                    <img src="../assets/images/icon-like.svg" alt="like off" class="like-off">
+                    <!-- 임시이미지 -->
+                    <img src="../assets/images/Vector.svg" alt="like on" style="display: none;" class="like-on">
+                    <!-- 임시이미지 -->
+                    <span class="small2">10</span>
+                </button>
+                <button type="button" class="btn-m pry-btn1 chatting-btn">채팅하기</button>
             </div>
         </div>
     </div>
 
+    <script src='../assets/js/jquery-3.2.1.min.js'></script>
     <script src="../assets/js/subMenu.js"></script>
     <script src="../assets/js/swiper-bundle.min.js"></script>
     <script>
+        $(document).ready(function(){
+            $('#storeItem-likeIcon').click(function(){
+                if($(this).children('.like-on').css('display') === 'none'){
+                    $(this).children('.like-on').css('display', 'inline-block');
+                    $(this).children('.like-off').css('display', 'none');
+                }else {
+                    $(this).children('.like-on').css('display', 'none');
+                    $(this).children('.like-off').css('display', 'inline-block');
+                }               
+            })
+        });
         const swiper = new Swiper('.storeItem-slide', {
             slidesPerView: 1,
             loop : false,
