@@ -4,22 +4,25 @@
     background-color: $color02;
     svg {
         fill: $color-gray06;
-    }
+        display: block;
+        margin: 0 auto;
+    }    display: block;
+    margin: 0 auto;
     div {
         max-height: 7.8rem;
         margin: 0 auto;
-        padding-top: 30vh;
+        padding-top: calc(50vh - 39px);
         color: $color-gray06;
         text-align: center;
         p {
             font-size: 1.6rem;
             font-weight: 700;
-            margin-top: 0.7rem;
+            margin-top: 1rem;
         }
     }
 }
-@media screen and (min-width: 768px) {
-    .splashScreen div {
-        padding-top: 25vh;
-    }
-}
+// @media screen and (min-width: 768px) {
+//     .splashScreen div {
+//         padding-top: 25vh;
+//     }
+// }
