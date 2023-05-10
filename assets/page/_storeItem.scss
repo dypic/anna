@@ -1,6 +1,10 @@
 .storeItem {
-    &.padding-top-header {
-        padding-top: 4.6rem;
+    img {
+        display: inline-block;
+        width: 100%;
+    }
+    .padding-top-header {
+        padding-top: 4.4rem;
     }
     &-item {
         &-name {
@@ -66,15 +70,8 @@
             width: calc(100% - 4.4rem);
         }
     }
-    .header-inner {
-        border-bottom: 0;
-        img {
-            width: 100%;
-            display: block;
-        }
-        &-back {
-            width: 0.8rem;
-        }
+    .header-inner-back {
+        width: 0.8rem;
     }
     .swiper-pagination-bullet-active {
         background-color: #fff !important;
