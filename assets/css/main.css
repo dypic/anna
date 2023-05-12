@@ -958,6 +958,11 @@ html { /* rem 정의 */
   height: 5.9rem;
   overflow-x: scroll;
   overflow-y: clip;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.addItem-img::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 .addItem-img input {
   display: none;

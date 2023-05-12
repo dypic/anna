@@ -70,15 +70,15 @@
                     </div>
                 </li>
             </ul>
-            <textarea class="body1" placeholder="게시글 내용을 입력해주세요."></textarea>
+            <textarea class="body1" placeholder="게시글 내용을 입력해주세요." id="textareaClear"></textarea>
             <div class="addItem-buttons">
-                <button type="button" class="btn-s secon-btn1">초기화</button>
+                <button type="button" class="btn-s secon-btn1" onclick="textClear()">초기화</button>
                 <button type="submit" class="btn-s secon-btn2">완료</button>
             </div>
     </div>
     <script>
-        // 이미지 업로드시 파일 li로 넣어주기
-        function loadFile(input) {
+    // 이미지 업로드시 파일 li로 넣어주기
+    function loadFile(input) {
         const uploadFiles = Array.from(input.files)
         uploadFiles.forEach(file => {
             let container = document.getElementById('imgList');
@@ -90,6 +90,11 @@
             container.appendChild(newLi).appendChild(newImage);
         });
     };
+    // 초기화 버튼 클릭시 초기화 
+    function textClear() {
+        let textarea = document.getElementById('textareaClear');
+        textarea.value = ''
+    }
     </script>
 </body>
 </html>
