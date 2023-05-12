@@ -1043,7 +1043,6 @@ html { /* rem 정의 */
 }
 
 .townInfo-popular-posts {
-  margin-top: 4.4rem;
   padding: 1rem 1.6rem;
   box-sizing: border-box;
   border-bottom: 8px solid #E8E8E8;
@@ -1073,9 +1072,6 @@ html { /* rem 정의 */
   width: 6rem;
   border-radius: 0.8rem;
   margin-right: 1rem;
-}
-.townInfo-taps {
-  padding-bottom: 8.4rem;
 }
 .townInfo-taps__list {
   padding: 0 1.6rem;
@@ -1158,4 +1154,24 @@ html { /* rem 정의 */
 .townInfo-taps__questions-item .question-content-imgs li:first-child:nth-last-child(3), .townInfo-taps__questions-item .question-content-imgs li:first-child:nth-last-child(3) ~ li:first-child {
   grid-column: 1/1;
   grid-row: 1/span 2;
+}
+
+.myPage ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.6rem 1.6rem;
+  border-bottom: 1px solid #E8E8E8;
+}
+.myPage ul li a > img {
+  width: 0.6rem;
+  transform: rotate(180deg);
+}
+.myPage ul li a span {
+  vertical-align: middle;
+}
+.myPage ul li a span img {
+  width: 6.4rem;
+  margin-right: 1.7rem;
+  vertical-align: middle;
 }/*# sourceMappingURL=main.css.map */

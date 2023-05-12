@@ -1,6 +1,5 @@
 .townInfo {
     &-popular-posts {
-        margin-top: 4.4rem;
         padding: 1rem 1.6rem;
         box-sizing: border-box;
         border-bottom: 8px solid $color-gray04;
@@ -33,7 +32,6 @@
     }
 
     &-taps {
-        padding-bottom: 8.4rem;
         &__list {
             padding: 0 1.6rem;
             display: flex;
