@@ -946,4 +946,93 @@ html { /* rem 정의 */
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.25);
+}
+
+.addItem {
+  height: 100vh;
+  overflow: scroll;
+}
+.addItem-img {
+  margin: 2rem 3.6rem;
+  position: relative;
+  height: 5.9rem;
+  overflow-x: scroll;
+  overflow-y: clip;
+}
+.addItem-img input {
+  display: none;
+}
+.addItem-imgList {
+  display: inline-flex;
+  gap: 0.5rem;
+  position: absolute;
+  top: 0;
+}
+.addItem-imgList li {
+  width: 5.7rem;
+  height: 5.7rem;
+  display: inline-block;
+  border: 1px solid #E8E8E8;
+  border-radius: 0.4rem;
+}
+.addItem-imgList li .adding-img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.addItem-imgList li label img {
+  display: block;
+  padding: 1.8rem 1.7rem;
+  width: auto;
+}
+.addItem-valueList li {
+  display: flex;
+  padding: 1.8rem 1.6rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #E8E8E8;
+  position: relative;
+}
+.addItem-valueList li img {
+  transform: rotate(180deg);
+  width: 0.6rem;
+}
+.addItem-valueList li div {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+.addItem-valueList-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.addItem textarea {
+  font-family: "Noto Sans";
+  width: calc(100% - 3.2rem);
+  margin: 0 1.6rem;
+  background-color: #F6F6F6;
+  border: 0;
+  padding: 1.6rem 2rem;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  height: calc(100% - 55.5rem);
+}
+.addItem textarea::-moz-placeholder {
+  color: #000;
+}
+.addItem textarea::placeholder {
+  color: #000;
+}
+.addItem-buttons {
+  display: flex;
+  margin: 1.2rem 1.6rem 4.1rem;
+  gap: 1.2rem;
+}
+.addItem-buttons button {
+  width: 50%;
 }/*# sourceMappingURL=main.css.map */
