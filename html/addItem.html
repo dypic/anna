@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>안나-addItem</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/main.css'>
+</head>
+<body>
+    <div class="addItem container-maxWidth">
+            <div class="addItem-img">
+                <ul class="addItem-imgList" id="imgList">
+                    <li>
+                        <label for="chooseFile">
+                            <img src="/assets/images/icon-plus.svg" alt="이미지 추가하기">
+                        </label>
+                        <input type="file" id="chooseFile" name="chooseFile" accept=".jpg, .png" multiple onchange="loadFile(this)">
+                    </li>
+                    <!-- <li><img src="" alt=""></li> -->
+                </ul>
+            </div>
+            <ul class="addItem-valueList body3">
+                <li>
+                    <a href="#" class="addItem-valueList-link"></a>
+                    <span>카테고리</span>
+                    <div>
+                        <span></span>
+                        <img src="/assets//images/icon-pointer.png" alt="이동">
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="addItem-valueList-link"></a>
+                    <span>상품명</span>
+                    <div>
+                        <span></span>
+                        <img src="/assets//images/icon-pointer.png" alt="이동">
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="addItem-valueList-link"></a>
+                    <span>가격 및 보증금</span>
+                    <div>
+                        <span></span>
+                        <img src="/assets//images/icon-pointer.png" alt="이동">
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="addItem-valueList-link"></a>
+                    <span>렌탈 기간</span>
+                    <div>
+                        <span></span>
+                        <img src="/assets//images/icon-pointer.png" alt="이동">
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="addItem-valueList-link"></a>
+                    <span>가격 제안 가능 여부</span>
+                    <div>
+                        <span>가능</span>
+                        <img src="/assets//images/icon-pointer.png" alt="이동">
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="addItem-valueList-link"></a>
+                    <span>위치</span>
+                    <div>
+                        <span></span>
+                        <img src="/assets//images/icon-pointer.png" alt="이동">
+                    </div>
+                </li>
+            </ul>
+            <textarea class="body1" placeholder="게시글 내용을 입력해주세요."></textarea>
+            <div class="addItem-buttons">
+                <button type="button" class="btn-s secon-btn1">초기화</button>
+                <button type="submit" class="btn-s secon-btn2">완료</button>
+            </div>
+    </div>
+    <script>
+        // 이미지 업로드시 파일 li로 넣어주기
+        function loadFile(input) {
+        const uploadFiles = Array.from(input.files)
+        uploadFiles.forEach(file => {
+            let container = document.getElementById('imgList');
+            let newLi = document.createElement("li");
+            let newImage = document.createElement("img");
+
+            newImage.setAttribute("class", 'adding-img');
+            newImage.src = URL.createObjectURL(file);   
+            container.appendChild(newLi).appendChild(newImage);
+        });
+    };
+    </script>
+</body>
+</html>
