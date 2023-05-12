@@ -457,17 +457,21 @@ html { /* rem 정의 */
   margin-right: 1.6rem;
 }
 
-.nav-wrap {
-  width: 100%;
-  max-width: 72rem;
-  height: 9.5rem;
-  overflow: hidden;
+.nav {
   position: fixed;
   display: flex;
   bottom: 0;
   z-index: 9999;
+  width: 100%;
+  max-width: 72rem;
 }
-.nav-wrap .nav-list {
+.nav .nav-wrap {
+  width: 100%;
+  position: relative;
+  height: 9.5rem;
+  overflow: hidden;
+}
+.nav .nav-wrap .nav-list {
   position: absolute;
   background-color: #FFFFFF;
   bottom: 0;
@@ -477,23 +481,15 @@ html { /* rem 정의 */
   justify-content: space-between;
   max-height: 8.3rem;
 }
-.nav-wrap .nav-list li:nth-of-type(3) > a > img {
-  position: absolute;
-  top: -10px;
-  left: calc(50% - 22px);
-}
-.nav-wrap .nav-list li:nth-of-type(3) > a > img + span {
-  padding-top: 26px;
-}
-.nav-wrap .nav-list > li {
+.nav .nav-wrap .nav-list > li {
   width: 100%;
   position: relative;
   color: #9E9E9E;
 }
-.nav-wrap .nav-list > li.active {
+.nav .nav-wrap .nav-list > li.active {
   color: #000000;
 }
-.nav-wrap .nav-list > li > a {
+.nav .nav-wrap .nav-list > li > a {
   min-width: 4.4rem;
   height: 44px;
   display: flex;
@@ -501,9 +497,20 @@ html { /* rem 정의 */
   text-align: center;
   padding: 20px 0;
 }
-.nav-wrap .nav-list > li > a > img {
+.nav .nav-wrap .nav-list > li > a > img {
+  width: 2.4rem;
   margin: 0 auto;
   margin-bottom: 5px;
+}
+.nav .nav-write-btn {
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: #F5D25D;
+  border-radius: 2.2rem;
+  padding: 1.1rem 1.9rem;
+  position: absolute;
+  right: 1.6rem;
+  bottom: 9.8rem;
 }
 
 .container-wrap {
