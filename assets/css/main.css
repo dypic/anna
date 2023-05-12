@@ -981,8 +981,8 @@ html { /* rem 정의 */
   border-radius: 0.4rem;
 }
 .addItem-imgList li .adding-img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
   display: inline-block;
@@ -1016,7 +1016,7 @@ html { /* rem 정의 */
   bottom: 0;
 }
 .addItem textarea {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   width: calc(100% - 3.2rem);
   margin: 0 1.6rem;
   background-color: #F6F6F6;
@@ -1028,10 +1028,10 @@ html { /* rem 정의 */
   height: calc(100% - 55.5rem);
 }
 .addItem textarea::-moz-placeholder {
-  color: #000;
+  color: #000000;
 }
 .addItem textarea::placeholder {
-  color: #000;
+  color: #000000;
 }
 .addItem-buttons {
   display: flex;
@@ -1040,4 +1040,122 @@ html { /* rem 정의 */
 }
 .addItem-buttons button {
   width: 50%;
+}
+
+.townInfo-popular-posts {
+  margin-top: 4.4rem;
+  padding: 1rem 1.6rem;
+  box-sizing: border-box;
+  border-bottom: 8px solid #E8E8E8;
+}
+.townInfo-popular-posts .title2 {
+  margin-bottom: 1rem;
+}
+.townInfo-popular-posts__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #F5D25D;
+  width: 1.6rem;
+  height: 1.6rem;
+  text-align: center;
+}
+.townInfo-popular-posts__title {
+  margin-bottom: 1rem;
+}
+.townInfo-popular-posts ul li {
+  display: flex;
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+.townInfo-popular-posts ul li img {
+  display: block;
+  width: 6rem;
+  border-radius: 0.8rem;
+  margin-right: 1rem;
+}
+.townInfo-taps {
+  padding-bottom: 8.4rem;
+}
+.townInfo-taps__list {
+  padding: 0 1.6rem;
+  display: flex;
+  gap: 2.4rem;
+  border-bottom: 1px solid #E8E8E8;
+  position: relative;
+}
+.townInfo-taps__list .tap-moving-bar {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background-color: #000000;
+  height: 1px;
+  left: 1.6rem;
+  width: 3.313rem;
+  transition: 0.3s;
+}
+.townInfo-taps__list li:not(.tap-moving-bar) {
+  color: #9E9E9E;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.townInfo-taps__list li:not(.tap-moving-bar).on {
+  color: #000000;
+}
+.townInfo-taps__content {
+  display: none;
+  padding: 0 1.6rem;
+}
+.townInfo-taps__content.on {
+  display: block;
+}
+.townInfo-taps__questions-item {
+  padding: 2rem 0;
+}
+.townInfo-taps__questions-item .question-profile {
+  display: flex;
+}
+.townInfo-taps__questions-item .question-profile .title3 {
+  margin-bottom: 0.2rem;
+}
+.townInfo-taps__questions-item .question-profile img {
+  width: 4rem;
+  margin-right: 0.6rem;
+}
+.townInfo-taps__questions-item .question-content {
+  margin: 1rem 0;
+}
+.townInfo-taps__questions-item .question-texts {
+  word-break: keep-all;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.27px;
+  margin-bottom: 1rem;
+}
+.townInfo-taps__questions-item .question-content-imgs {
+  height: 19.4rem;
+  display: grid;
+  grid-template-columns: 56% 44%;
+  grid-template-rows: 50% 50%;
+  row-gap: 4px;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+}
+.townInfo-taps__questions-item .question-content-imgs img {
+  display: inline-block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.townInfo-taps__questions-item .question-content-imgs li:first-child:nth-last-child(1) {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+.townInfo-taps__questions-item .question-content-imgs li:first-child:nth-last-child(3), .townInfo-taps__questions-item .question-content-imgs li:first-child:nth-last-child(3) ~ li:not(:first-child) {
+  grid-column: 2/2;
+}
+.townInfo-taps__questions-item .question-content-imgs li:first-child:nth-last-child(3), .townInfo-taps__questions-item .question-content-imgs li:first-child:nth-last-child(3) ~ li:first-child {
+  grid-column: 1/1;
+  grid-row: 1/span 2;
 }/*# sourceMappingURL=main.css.map */
