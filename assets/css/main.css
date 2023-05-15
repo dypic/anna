@@ -950,7 +950,7 @@ html { /* rem 정의 */
 
 .addItem {
   height: 100vh;
-  overflow: scroll;
+  overflow-y: auto;
 }
 .addItem-img {
   margin: 2rem 3.6rem;
@@ -1099,11 +1099,7 @@ html { /* rem 정의 */
   color: #000000;
 }
 .townInfo-taps__content {
-  display: none;
   padding: 0 1.6rem;
-}
-.townInfo-taps__content.on {
-  display: block;
 }
 .townInfo-taps__questions-item {
   padding: 2rem 0;
