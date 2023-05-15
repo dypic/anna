@@ -1,6 +1,6 @@
 .addItem {
     height: 100vh;
-    overflow: scroll;
+    overflow-y: auto;
     &-img {
         margin: 2rem 3.6rem;
         position: relative;
