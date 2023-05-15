@@ -950,7 +950,7 @@ html { /* rem 정의 */
 
 .addItem {
   height: 100vh;
-  overflow: scroll;
+  overflow-y: auto;
 }
 .addItem-img {
   margin: 2rem 3.6rem;
