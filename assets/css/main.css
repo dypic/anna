@@ -566,7 +566,7 @@ html { /* rem 정의 */
   height: 604px;
 }
 .side-filter-item {
-  padding: 1.6rem 2.6rem 1.6rem 3.6rem;
+  padding: 1.6rem 2.5rem 1.6rem 1.6rem;
   cursor: pointer;
 }
 .side-filter__close-btn {
@@ -585,7 +585,7 @@ html { /* rem 정의 */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.6rem 2.6rem 1.6rem 3.6rem;
+  padding: 1.6rem 2.5rem 1.6rem 1.6rem;
   cursor: pointer;
 }
 .side-filter li {
