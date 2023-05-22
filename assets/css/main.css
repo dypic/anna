@@ -341,7 +341,7 @@ html { /* rem 정의 */
 
 .btn-l {
   width: 34.3rem;
-  height: 4.4rem;
+  height: 5rem;
   font-size: 1.7rem;
   border-radius: 4px;
   font-weight: 500;
@@ -349,7 +349,7 @@ html { /* rem 정의 */
 
 .btn-m {
   width: 29.1rem;
-  height: 4.4rem;
+  height: 5rem;
   font-size: 1.7rem;
   border-radius: 4px;
   font-weight: 500;
@@ -825,7 +825,7 @@ html { /* rem 정의 */
   width: calc(100% - 4.4rem);
 }
 .storeItem .header-inner-back {
-  width: 0.8rem;
+  width: 1.8rem;
 }
 .storeItem .swiper-pagination-bullet-active {
   background-color: #fff !important;
@@ -844,7 +844,7 @@ html { /* rem 정의 */
   align-items: center;
 }
 .chatting-header-location a {
-  width: 2.4rem;
+  width: 1.8rem;
   display: inline-block;
   margin-right: 2rem;
 }
@@ -1170,4 +1170,118 @@ html { /* rem 정의 */
   width: 6.4rem;
   margin-right: 1.7rem;
   vertical-align: middle;
+}
+
+.register01 {
+  padding: 0 1.6rem 1.9rem;
+}
+.register01-location {
+  height: 4.4rem;
+  display: flex;
+  align-items: center;
+}
+.register01-location a {
+  width: 1.8rem;
+  display: inline-block;
+  margin-right: 2rem;
+}
+.register01-location img {
+  width: 100%;
+  display: inline-block;
+}
+.register01-content {
+  margin-top: 2.4rem;
+  display: block;
+  position: relative;
+}
+.register01-content span {
+  display: block;
+}
+.register01-content input {
+  display: inline-block;
+  height: 3rem;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  width: 100%;
+}
+.register01-content .register01-content-btnInput {
+  display: flex;
+}
+.register01-content img {
+  display: inline-block;
+  position: absolute;
+  right: 0.6rem;
+}
+.register01-content-btn {
+  flex-shrink: 0;
+  height: 3rem;
+  margin-left: 1.6rem;
+  width: 9.5rem;
+}
+.register01-content-password-icon {
+  width: 1.833rem;
+  bottom: 1rem;
+  cursor: pointer;
+}
+.register01-content-search-icon {
+  width: 1.8rem;
+  bottom: 1.1rem;
+}
+.register01-content .display-none {
+  display: none;
+}
+.register01-checkbox_group {
+  margin-top: 3rem;
+  position: relative;
+}
+.register01-checkbox_group input {
+  display: none;
+}
+.register01-checkbox_group div {
+  display: flex;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 0 0 2.75rem;
+}
+.register01-checkbox_group div:first-child {
+  padding-left: 0;
+}
+.register01-checkbox_group label {
+  margin-left: 0.85rem;
+}
+.register01-checkbox_group input:checked ~ .register01-checkbox::before {
+  content: "";
+  display: block;
+  width: 0.7rem;
+  height: 0.5rem;
+  background: url("../../assets/images/icon-check.svg") no-repeat center center;
+}
+.register01-checkbox_group label {
+  padding: 1.5rem 0 1.8rem 0;
+  width: calc(100% - 1.5rem);
+}
+.register01-checkbox_group .register01-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 1.5rem 0 1.8rem 0;
+  background: url(../../assets/images/icon-checkBox.svg) no-repeat center center;
+}
+.register01-checkbox_group .register01-checkbox-link {
+  transform: rotate(180deg);
+  position: absolute;
+  right: 21.88px;
+  padding: 1.5rem 0 1.8rem 0;
+  z-index: 1;
+  width: 7%;
+}
+.register01-checkbox_group .register01-checkbox-link img {
+  display: inline-block;
+  width: 0.525rem;
+}
+.register01-submit {
+  width: 100%;
+  margin-top: 3.3rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>안나_register01</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../assets/css/main.css'>
+</head>
+<body>
+    <!-- register -->
+    <div class="register01 container-maxWidth">
+        <div class="register01-location">
+            <a href="#">
+                <img src="../../assets/images/icon-back.svg" alt="뒤로가기">
+            </a>
+            회원가입
+        </div>
+        <form>
+            <label for="registerEmail" class="register01-content">
+                <span>이메일&#42;</span>
+                <span class="register01-content-btnInput">
+                    <input type="text" id="registerEmail">
+                    <button type="button" class="register01-content-btn btn-s secon-btn2">중복확인</button>
+                </span>
+            </label>
+            <label for="registerEmail" class="register01-content">
+                <span>비밀번호&#42;</span>
+                <input type="password" id="registerEmail">
+                <img src="../../assets/images/icon-eye-off.svg" alt="비밀번호 숨김" class="register01-content-password-icon"> 
+                <img src="" alt="비밀번호 안숨김" class="display-none"> 
+            </label>
+            <label for="registerPhone" class="register01-content">
+                <span>전화번호&#42;</span>
+                <span class="register01-content-btnInput">
+                    <input type="text" id="registerPhone">
+                    <button type="button" class="register01-content-btn btn-s secon-btn2">본인인증</button>
+                </span>
+            </label>
+            <label for="registerAddress" class="register01-content">
+                <span>주소</span>
+                <input type="text" id="registerAddress" placeholder="동명(읍,면)으로 검색 (ex.서초동)">
+                <img src="../../assets/images/icon-search.svg" alt="주소검색" class="register01-content-search-icon">
+            </label>
+            <label for="registerNickName" class="register01-content">
+                <span>닉네임</span>
+                <input type="text" id="registerNickName">
+            </label>
+            <div class="register01-checkbox_group">
+                <div>
+                    <input type="checkbox" id="check_all">
+                    <span class="register01-checkbox"></span>
+                    <label for="check_all" onclick="checkAll()">전체 동의합니다.</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="check_1" class="normal allCheck">
+                    <span class="register01-checkbox"></span>
+                    <label for="check_1">[필수] 이용약관에 동의합니다.</label>
+                    <a href="#" class="register01-checkbox-link">
+                        <img src="../../assets/images/icon-pointer.png" alt="이용약관으로 이동">
+                    </a>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="check_2" class="normal allCheck" >
+                    <span class="register01-checkbox"></span>
+                    <label for="check_2">[필수] 개인정보 수집 및 이용에 동의합니다.</label>
+                    <a href="#" class="register01-checkbox-link">
+                        <img src="../../assets/images/icon-pointer.png" alt="이용약관으로 이동">
+                    </a>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="check_3" class="normal allCheck">
+                    <span class="register01-checkbox"></span>
+                    <label for="check_3">[필수] 본인은 만 14세 이상입니다.</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="check_4" class="normal allCheck">
+                    <span class="register01-checkbox"></span>
+                    <label for="check_4">[선택] 광고성 정보 수신에 모두 동의합니다.</label>
+                    <a href="#" class="register01-checkbox-link">
+                        <img src="../../assets/images/icon-pointer.png" alt="이용약관으로 이동">
+                    </a>
+                </div>
+            </div>
+            <button type="button" class="btn-l pry-btn1 register01-submit">회원가입</button>
+        </form>
+    </div>
+    <script>
+        function checkAll() {
+            const checkBoxAll =  document.getElementById('check_all');
+            const checkboxes = document.querySelectorAll('.allCheck');
+            if(!checkBoxAll.checked){
+                checkboxes.forEach((checkbox) => {
+                checkbox.checked = !checkBoxAll.checked
+            })
+            }
+        }
+    </script>
+</body>
+</html>

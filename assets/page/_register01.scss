@@ -1,0 +1,114 @@
+.register01{
+    padding: 0 1.6rem 1.9rem;
+    &-location {
+        height: 4.4rem;
+        display: flex;
+        align-items: center;
+        a {
+            width: 1.8rem;
+            display: inline-block;
+            margin-right: 2rem;
+        }
+        img {
+            width: 100%;
+            display: inline-block;
+        }
+    }
+    &-content { 
+        margin-top: 2.4rem;
+        display: block;
+        position: relative;
+        span {
+            display: block;
+        }
+        input {
+            display: inline-block;
+            height: 3rem;
+            outline: 0;
+            border: 0;
+            border-bottom: 1px solid #999;
+            width: 100%;
+        }
+        .register01-content-btnInput {
+            display: flex;
+        }
+        img {
+            display: inline-block;
+            position: absolute;
+            right: 0.6rem;
+        }
+        &-btn {
+            flex-shrink: 0;
+            height: 3rem;
+            margin-left: 1.6rem;
+            width: 9.5rem;
+        }
+        &-password-icon {
+            width: 1.833rem;
+            bottom: 1rem;
+            cursor: pointer;
+        }
+        &-search-icon {
+            width: 1.8rem;
+            bottom: 1.1rem;
+        }
+        .display-none {
+            display: none;
+        }
+    }
+    &-checkbox_group {
+        margin-top: 3rem;
+        position: relative;
+        input {
+            display: none;
+        }
+        div {
+            display: flex;
+            border-bottom: 1px solid #e8e8e8;
+            // padding: 1.5rem 0 1.8rem 2.75rem;
+            padding: 0 0 0 2.75rem;
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+        label {
+            margin-left: 0.85rem;
+        }
+        input:checked ~ .register01-checkbox::before {
+            content: '';
+            display: block;
+            width: 0.7rem;
+            height: 0.5rem;
+            background: url("../../assets/images/icon-check.svg") no-repeat center center;
+        }
+        label {
+            padding: 1.5rem 0 1.8rem 0;
+            width: calc(100% - 1.5rem);
+        }
+        .register01-checkbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: 1.5rem 0 1.8rem 0;
+            background: url(../../assets/images/icon-checkBox.svg) no-repeat center center;
+        }
+        .register01-checkbox-link {
+            transform: rotate(180deg);
+            position: absolute;
+            right: 21.88px;
+            padding: 1.5rem 0 1.8rem 0;
+            z-index: 1;
+            width: 7%;
+            img {
+                display: inline-block;
+                width: 0.525rem;
+            }
+        }
+    }
+    &-submit {
+        width: 100%;
+        margin-top: 3.3rem;
+    }
+}
